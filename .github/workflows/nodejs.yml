@@ -17,3 +17,4 @@ jobs:
       - run: npm install -g full-icu
       - run: echo "NODE_ICU_DATA=`node-full-icu-path 2>/dev/null`" >> $GITHUB_ENV
       - run: node -e "console.log(new Intl.DateTimeFormat('es',{month:'long'}).format(new Date(9E8)))"
+      - run: echo "NODE_ICU_DATA=" >> $GITHUB_ENV
